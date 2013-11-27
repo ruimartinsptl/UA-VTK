@@ -11,8 +11,35 @@
 #include "vtkRenderer.h"
 
 /// C++ required
-#include <iostream>
+#include <iostream>	//For COUT, ...
+#include <fstream>	//For Files
+#include <sstream>	//
+#include <string>	//
+
 using namespace std;
+
+void drawBuildings(void){
+	ifstream infile("map.txt");
+	string line,c1,c2,c3,c4,c5,c6,c7,c8;
+	while (std::getline(infile, line)){
+		istringstream iss(line);
+		if(!(iss >> c1)){ 
+			cout << "Error READING map.txt! END!\nPress any key..." <<endl;
+			getchar();
+			break;
+		};
+		if (c1.substr(0,1).compare("#")==0){
+			//cout << "comentario" << endl;
+		}else{
+			if(!(iss >> c2 >> c3 >> c4 >> c5 >> c6 >> c7 >> c8)){ 
+				cout << "Error READING map.txt! END!\nPress any key..." <<endl;
+				getchar();
+				break;
+			};
+			cout << c1 << "\tPosX: " << c2 << "\tPosY: " << c3 << "\tPosX: " << c4 << "\tAngX: " << c5 << "\tAngY: " << c6 << "\tAngZ: " << c7 << "\tFileMap: " << c8 << endl;
+		}
+	}
+}
 
 int main( )
 {
@@ -30,6 +57,9 @@ int main( )
 	vtkRenderWindow *renWin = vtkRenderWindow::New();
 	renWin->AddRenderer( ren1 );
 	/////////////////////////////////
+
+	//Load MAP
+	drawBuildings();
 	
 	//Create 3 Render Window
 	vtkRenderWindow *renWinMain = vtkRenderWindow::New();
@@ -76,3 +106,4 @@ int main( )
 	getchar();
 	return 0;
 }
+

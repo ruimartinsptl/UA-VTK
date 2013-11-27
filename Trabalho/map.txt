@@ -1,0 +1,3 @@
+#Nome			PosX	PosY	PosZ	AngX	AngY	AngZ	FileObject
+ComplexoPedagogico	0.00	0.00	0.00	0.00	0.00	0.00	ComplexoPedagogico.obj
+Reitoria	0.00	0.00	0.00	0.00	0.00	0.00	Reitoria.obj
