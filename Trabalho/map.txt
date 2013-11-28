@@ -1,5 +1,5 @@
-#Nome			PosX	PosY	PosZ	AngX	AngY	AngZ	FileObject
-ComplexoPedagogico	0.10	0.00	0.00	0.00	0.00	0.00	ComplexoPedagogico.obj
-Reitoria		0.10	0.01	2.00	0.00	0.00	0.00	Reitoria.obj
-DECA			0.20	0.01	2.00	0.00	0.00	0.00	DECA.obj
-DETI			0.10	0.11	1.00	0.00	0.00	0.00	DETI.obj
+#Nome			PosX	PosY	PosZ	AngX	AngY	AngZ	FileObject			Texture
+ComplexoPedagogico	0.00	0.00	0.00	0.00	0.00	0.00	objects/Caloirodromo.obj	?
+Residencia		0.00	0.00	0.00	0.00	0.00	0.00	objects/Residência.obj		textures/residencia.jpg
+DECA			0.00	0.00	0.00	0.00	0.00	0.00	objects/DECA.obj		?
+Quimica			0.00	0.00	0.00	0.00	0.00	0.00	objects/Quimica.obj		?

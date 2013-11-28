@@ -23,20 +23,23 @@ public:
 	double getMainCameraFocalPointY(void){ return 00.00; };
 	double getMainCameraFocalPointZ(void){ return 00.00; };
 	//Campus CAMERA
-	double getCampusCameraPositionX(void){ return 10.00; }; //Vista de Cima
-	double getCampusCameraPositionY(void){ return 10.00; };
-	double getCampusCameraPositionZ(void){ return 10.00; };
+	double getCampusCameraPositionX(void){ return 30.00; }; //Vista de Esquina para ver tudo
+	double getCampusCameraPositionY(void){ return 30.00; };
+	double getCampusCameraPositionZ(void){ return 30.00; };
 	double getCampusCameraFocalPointX(void){ return 00.00; };
 	double getCampusCameraFocalPointY(void){ return 00.00; };
 	double getCampusCameraFocalPointZ(void){ return 00.00; };
 	//Person CAMERA
-	double getPersonCameraPositionX(void){ return 10.00; }; //Vista de Lado
+	double getPersonCameraPositionX(void){ return 50.00; }; //Vista de Lado
 	double getPersonCameraPositionY(void){ return 00.00; };
 	double getPersonCameraPositionZ(void){ return 00.00; };
 	double getPersonCameraFocalPointX(void){ return 00.00; };
 	double getPersonCameraFocalPointY(void){ return 00.00; };
 	double getPersonCameraFocalPointZ(void){ return 00.00; };
 	///////////////////////////////////////////////////////////
+
+	//Man's Height
+	double getManHeight(void){ return 1.00; }
 
 	
 
